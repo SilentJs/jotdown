@@ -1,0 +1,53 @@
+.profileContainer{
+    background: black;
+    position: fixed;
+    top: 100px;
+    left: 270px;
+    padding: 20px;
+    color: white;
+    width: 600px;
+}
+.profileName{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.profileEmail{
+    position: absolute;
+    top: 45px;
+    color: #b3b0b0;
+    left: 130px;
+}
+.profileButtonContainer{
+    position: absolute;
+    top: 20px;
+    height: 110px;
+    right: 20px;
+    display: grid;
+    justify-content: end;
+    text-align: right;
+}
+.profileOrderButton, .profileTransactionsButton, .profileAboutUsButton,.profileLogout{
+    cursor:pointer;
+    margin:0;
+    padding: 0;
+}
+.profileOrdersContainer{
+    position: fixed;
+    background: black;
+    color: white;
+    top: 250px;
+    left: 270px;
+    padding: 20px;
+    height: 450px;
+    width: 600px;
+    transition: 0.5s;
+}
+.profileOrdersContainerOrder{
+    transition: 0.5s;
+    margin: 0px;
+    height: 220px;
+    position: relative;
+}

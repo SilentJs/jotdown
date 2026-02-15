@@ -1,0 +1,562 @@
+.orderBackground{
+    background:red;
+}
+.orderImage{
+    background: #bebcbc;
+    opacity: 0.8;
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    left: 0px;
+    border-radius: 0px;
+    top: 0px;
+    /* border: black solid 2px; */
+}
+.orderImageContainer{
+    position: absolute;
+    left: 50px;
+    /* border: 1px solid white; */
+    width: 500px;
+    height: 450px;
+    top: 40px;
+}
+.orderImageGlass{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    background: none;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.510329131652661) 100%);
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+.orderImageTextHeading{
+    color: #cac6c6;
+    /* background: black; */
+    position: absolute;
+    bottom: 10px;
+    width: fit-content;
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.orderImageText{
+    /* background: black; */
+    position: absolute;
+    top: 330px;
+    color: #c0bebea3;
+    font-size: 14px;
+    width: 150px;
+    text-align: right;
+    display: grid;
+    left: 390px;
+}
+.orderSelectionContainer{
+    position: fixed;
+    overflow-y: scroll;
+    /* right: 100px; */
+    width: 500px;
+    height: 150px;
+    border-radius: 0px;
+    background: #272626e6;
+    /* border: 2px solid black; */
+    top: 575px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    left: 300px;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.orderSelectionContainer::-webkit-scrollbar{
+    display: none;
+}
+.orderCustomizationContainer{
+    width: 610px;
+    height: 615px;
+    background: #202020;
+    position: fixed;
+    left: 825px;
+    top: 120px;
+    /* border: 1px solid #343434; */
+    border-radius: 5px;
+    /* border: 4px solid #151313; */
+    /* border-style: dashed; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.noteBookButton1{
+    border-radius: 100px 0px 0px 100px;
+}
+.noteBookButton2{
+    border-radius: 0px 100px 100px 0px;
+}
+.noteBookType1{
+    color: white;
+    display: grid;
+    width: 155px;
+    border: 1px solid #F2C53D;
+    background: #0000008a;
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.noteBookType2{
+    color: grey;
+    display: grid;
+    width: 155px;
+    background: #2d2d2d;
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.order{
+    position: absolute;
+    background: grey;
+    height: 90px;
+    color: white;
+    top: 5px;
+    left: 5px;
+    /* padding: 25px; */
+    border-radius: 0px;
+}
+.order2{
+    position: absolute;
+    background: grey;
+    height: 90px;
+    color: white;
+    top: 5px;
+    left: 150px;
+    /* padding: 25px; */
+    border-radius: 0px;
+}
+.order3{
+    position: absolute;
+    background: grey;
+    height: 90px;
+    color: white;
+    top: 5px;
+    left: 295px;
+    /* padding: 25px; */
+    border-radius: 0px;
+}
+.order4{
+    position: absolute;
+    background: grey;
+    height: 90px;
+    color: white;
+    top: 5px;
+    left: 440px;
+    /* padding: 25px; */
+    border-radius: 0px;
+}
+.orderSelectionImage{
+    height: 140px;
+    color: transparent;
+    width: 140px;
+    border-radius: 0px;
+}
+.ordertextGlass{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 0px;
+    background: black;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7120098039215687) 100%);
+    border-radius: 0px;
+    opacity: 0.9;
+}
+.ordertext{
+    top: 110px;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.orderText{
+    width: 100px;
+    height: 100px;
+    /* background: black; */
+    position: absolute;
+    color: grey;
+    bottom: 60px;
+    right: 20px;
+    width: 150px;
+    display: grid;
+    justify-content: left;
+    align-items: flex-end;
+    text-align: right;
+}
+.noteBookTypeContainer{
+    position: absolute;
+    /* border: 2px solid black; */
+    /* padding: 5px; */
+    border-radius: 0px;
+    /* background: #bcbcbc; */
+    display: flex;
+    top: 50px;
+    left: 260px;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #343434; */
+
+}
+.mathButtonContainerInfo{
+    /* display: none; */
+    position: absolute;
+    left: -270px;
+    width: 260px;
+    color: grey;
+    background: #0000008a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    border-radius: 0px 0px 0px 0px;
+}
+.mathButtonContainer{
+    position: absolute;
+    display: flex;
+    top: 150px;
+    right: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+}
+.orderImageRightButton{
+    color: transparent;
+    position: absolute;
+    width: 50px;
+    filter: invert(1);
+    right: 10px;
+    z-index: 1;
+    height: 50px;
+    top: 210px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.orderImageRightButton:hover{
+    filter:invert(0.5)
+}
+.orderImageLeftButton{
+    color: transparent;
+    position: absolute;
+    width: 50px;
+    filter: invert(1);
+    left :10px;
+    height: 50px;
+    top: 210px;
+    z-index: 1;
+    bottom: 160px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.orderImageLeftButton:hover{
+    filter:invert(0.5)
+}
+.mathButtonContainer2{
+    position: absolute;
+    display: flex;
+    top: 100px;
+    right: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mathButtonContainer3{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    right: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mathAddButton{
+    background: #000000;
+    padding: 5px;
+    width: 20px;
+    height: 18px;
+    display: flex;
+    border-radius: 0px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mathSubstractButton{
+    background: #11b9b9;
+    width: 18px;
+    height: 18px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 5px;
+    display: grid;
+    filter:invert(1);
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+}
+.mathSubstractButton2{
+    background: grey;
+    width: 18px;
+    height: 18px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 5px;
+    display: grid;
+    filter:invert(1);
+    cursor: pointer; 
+    align-items: center;
+    justify-items: center;
+}
+.instructionBox{
+    bottom: 20px;
+    position: absolute;
+    left: 20px;
+    border: none;
+    background: #282828;
+    padding: 10px;
+    height: 240px;
+    width: 550px;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: sans-serif;
+    border-radius: 0px;
+    resize: none;
+    outline: none;
+    color: white;
+}
+.instructionBox::selection{
+    color:black
+}
+.uploadInstructionBox{
+    bottom: 15px;
+    position: absolute;
+    left: 20px;
+    border: none;
+    background: #91dbf9;
+    padding: 10px;
+    height: 50px;
+    width: 550px;
+    /* overflow-y: scroll; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: sans-serif;
+    border-radius: 0px;
+    resize: none;
+    outline: none;
+}
+.mathButtonsAmount{
+    /* background: #cccaca; */
+    position: absolute;
+    color: white;
+    bottom: 2px;
+    right: 60px;
+    padding: 2px;
+    border-radius: 100px;
+}
+.orderBillContainer{
+    position: fixed;
+    right: 10px;
+    background: black;
+    color: white;
+    padding: 30px;
+    width: 330px;
+    z-index: 1;
+    /* border: 1px solid #343434; */
+    top: 120px;
+    border-radius: 18px;
+    /* align-items: stretch; */
+    /* justify-content: space-around; */
+    height: 560px;
+    transition: 0.3s;
+}
+.orderListCrossButton{
+    position: absolute;
+    color: white;
+    width: 100px;
+    height: 20px;
+    z-index: 1;
+    right: -30px;
+    color: black;
+    cursor: pointer;
+    top: 40px;
+}
+/* @media only screen and (max-width: 1820px) {
+    .orderBillContainer {
+      display: none;
+    }
+  } */
+.orderListContainer{
+    position: absolute;
+    display: grid;
+    height: 200px;
+    top: 120px;
+    left: 40px;
+}
+.orderListPriceContainer{
+    position: absolute;
+    display: grid;
+    height: 200px;
+    top: 120px;
+    right: 19px;
+    justify-content: end;
+    color: #F2C53D;
+    justify-items: end;
+}
+.orderBuyButton {
+    position: absolute;
+    top: 550px;
+    left: 30px;
+    background: #3d3d3d;
+    padding: 10px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+.orderAddToCartButton{
+    position: absolute;
+    top: 550px;
+    right: 20px;
+    background: #F2C53D;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+}
+.orderBillContainerHeading{
+    position: absolute;
+    background: #F2C53D;
+    display: grid;
+    color: black;
+    justify-content: start;
+    width: 360px;
+    height: 100px;
+    padding-left: 30px;
+    border-radius: 15px 15px 0px 0px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    font-size: 80px;
+}
+.orderListPriceSummation{
+    width: 330px;
+    border: none;
+    padding-top: 10px;
+    text-align: right;
+    border-top: dashed 3px white;
+}
+.billBoxButton{
+    left: 1220px;
+    color: #000;
+    position: fixed;
+    top: 360px;
+    width: 196px;
+    background: #F2C53D;
+    height: 25px;
+    padding: 5px px;
+    /* filter: invert(1); */
+    /* border: 1px solid #343434; */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.billBoxButtonNotification{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background: #e42c2c;
+    border-radius: 100px;
+    right: 10px;
+}
+.billBoxButton:hover{
+    background-color: #F2A74B;
+}
+.errorMsg{
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+    right: 10px;
+}.handleUpload{
+    background: #080808;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #343434;
+    color: white;
+}
+.uploadButton {
+    border: 1px solid #343434;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+  }
+.uploadButton:hover{
+    background-color: #555555;
+}
+.filelinksContainer{
+    width: 220px;
+    position: absolute;
+    height: 30px;
+    background: black;
+    border: 1px solid #343434;
+    top: 50px;
+    left: 20px;
+    transition: 0.5s;
+}
+.filelinkButton{
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    filter: invert(0.3);
+    cursor: pointer;
+}
+.filelinkInput{
+    position: absolute;
+    background: none;
+    width: 180px;
+    height: 25px;
+    border: none;
+    top: 2px;
+    left: 5px;
+    color: white;
+    user-select: none;
+}
+.filelinkInput:focus{
+    outline: none;
+}
+.infoPageNumber{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 100px;
+    left: 10px;
+}
+.completionPercentage{
+    position: absolute;
+    right: 65px;
+    font-size: 12px;
+    top: 13px;
+}
+.fileUploadContainer{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    background: black;
+    left: 20px;
+    top: -5px;
+}
+

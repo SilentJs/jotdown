@@ -1,0 +1,307 @@
+a {
+    color: inherit; 
+    text-decoration: none; 
+}  
+ a:hover {
+    color: inherit; 
+    text-decoration: underline;
+}
+.fileEmbedContainer {
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    background: black;
+    border: 1px solid #343434;
+    top: 90px;
+    left: 20px;
+    overflow: hidden;
+}
+img.fileEmbed {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.fileEmbedInfo {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    left: 35px;
+    top: 5px;
+}
+.fileEmbedLink {
+    color: grey;
+    font-size: 10px;
+    position: absolute;
+    width: 600px;
+    top: 20px;
+    left: 35px;
+    transition: 0.2s;
+}
+.fileEmbedLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fileEmbedRemove {
+    position: absolute;
+    height: 15px;
+    width: 225px;
+    background: #4c4c4c;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 0px;
+    cursor: pointer;
+}
+.version{
+    color: #4c4b4b;
+    position: fixed;
+    font-style: italic;
+    font-size: 14px;
+    right: 10px;
+}
+.addressCheckerContainer {
+    position: fixed;
+    height: inherit;
+    width: inherit;
+    left: inherit;
+    background: inherit;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.addressCheckerContainer::-webkit-scrollbar{
+    display: none;
+}
+input.addressContainerInputBox {
+    position: absolute;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+input.addressContainerInputBox::placeholder{
+    color: #979797;
+}
+input.addressContainerInputBox::spelling-error{
+    color: none;
+    background: none;
+}
+input.addressContainerInputBox:focus{
+    outline: none;
+}
+.addressCustomFirstName{
+    top: 20px;
+}
+.addressCustomLastName{
+    top: 60px;
+}
+.addressCustomAddress{
+    top:100px;
+}
+.addressCustomLandmark{
+    top:140px;
+}
+.addressCustomCity{
+    top:180px;
+}
+.addressCustomState{
+    top:220px;
+}
+.addressCustomPincode{
+    top:260px;
+}
+.addressCustomPhone{
+    top:300px;
+}
+.addressCustomEmail{
+    top:340px;
+}
+.addressCheckerContainerStatus {
+    position: absolute;
+    top: 430px;
+    color: grey;
+    left:0px;
+    font-size: 14px;
+    padding: 5px;
+}
+.addressContainerSaveButton {
+    position: absolute;
+    left: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    top: 400px;
+    cursor: pointer;
+    width: 80px;
+    color: white;
+    font-size: 12px;
+    height: 15px;
+    transition: 0.2s;
+}
+.addressContainerSaveButton:hover{
+    background: white;
+    color: black;
+}
+.addressContainerInfo {
+    position: absolute;
+    font-size: 13px;
+    color: grey;
+    font-style: italic;
+}
+.addressContainerStoredAddress {
+    padding: 10px;
+    border: 1px solid grey;
+    margin: 5px;
+    position: relative;
+    width: 80%;
+    left: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addressContainerStoredAddress:hover{
+    background: #292929;
+}
+.addressContainerStoredAddressListNumber {
+    position: absolute;
+    font-size: 40px;
+    bottom: -5px;
+    right: 10px;
+    font-weight: 700;
+    color: #7f7f7f;
+}
+.DialogueBox {
+    position: fixed;
+    z-index: 5;
+    width: 450px;
+    height: 499px;
+    background: #072d39;
+    border: 1px solid #1d5277;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.DialogueBoxHeading {
+    position: relative;
+    height: 30px;
+}
+.DialogueBoxBottom{
+    position: absolute;
+    height: 30px;
+    bottom: 0px;
+    width: inherit;
+}
+.DialogueHolder {
+    position: relative;
+    width: inherit;
+    height: 430px;
+}
+.dialogueBackgroundCover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #00000099;
+    z-index: 4;
+}
+.errorMsg{
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+    right: 10px;
+}.handleUpload{
+    background: #080808;
+    padding: 10px;
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #343434;
+    color: white;
+}
+.uploadButton {
+    border: 1px solid #343434;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+  }
+.uploadButton:hover{
+    background-color: #555555;
+}
+.filelinksContainer{
+    width: 220px;
+    position: absolute;
+    height: 30px;
+    background: black;
+    border: 1px solid #343434;
+    top: 50px;
+    left: 20px;
+    transition: 0.5s;
+}
+.filelinkButton{
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    filter: invert(0.3);
+    cursor: pointer;
+}
+.filelinkInput{
+    position: absolute;
+    background: none;
+    width: 180px;
+    height: 25px;
+    border: none;
+    top: 2px;
+    left: 5px;
+    color: white;
+    user-select: none;
+}
+.filelinkInput:focus{
+    outline: none;
+}
+.infoPageNumber{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 100px;
+    left: 10px;
+}
+.completionPercentage{
+    position: absolute;
+    right: 65px;
+    font-size: 12px;
+    top: 13px;
+}
+.fileUploadContainer{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    background: black;
+    left: 20px;
+    top: -5px;
+  }
+.jsonDownloadButton{
+    color: white;
+    background: black;
+    border: 1px solid white;
+    padding: 5px;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.jsonDownloadButton:hover{
+    background: #4b4b4b;
+}
