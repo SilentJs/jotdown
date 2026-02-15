@@ -1,0 +1,104 @@
+:root{
+    --root-color:#c02c11;
+    --info-color-NF:#ffffff;
+    --info-color-SA:#af911d;
+    --border-color:#575757;
+    --secondary-border-color:#414141;
+    --tertiary-border-color:#1b1b1b;
+}
+
+body{
+    background: rgb(37,37,37);
+    background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(15,15,15,1) 100%);
+}
+body {
+    background-color: #000;
+    color: #0F0;
+    font-family: monospace;
+    padding: 20px;
+    position: relative;
+}
+
+/* Simulate scan lines */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Simulate color distortion */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03); /* Adjust opacity for desired effect */
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* Simulate flickering */
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+    }
+    25% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+body {
+    animation: flicker 0.1s infinite alternate-reverse;
+}
+
+/* Simulate RGB spaces shift with visible dots */
+.rgb-spaces {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2" fill="#f00"/><circle cx="5" cy="5" r="1" fill="#f00"/><circle cx="15" cy="15" r="1" fill="#f00"/></svg>');
+    pointer-events: none;
+    z-index: 9997;
+}
+@keyframes loading-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: loading-spin 1s linear infinite;
+  }
+  

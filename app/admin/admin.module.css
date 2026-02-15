@@ -1,0 +1,430 @@
+
+.mainBox{
+    background: black;
+    color: white;
+    position: fixed;
+    font-family: system-ui;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding: 20px;
+    display: grid;
+    align-content: stretch;
+    height: 200px;
+    width: 500px;
+    left: 50px;
+}
+.heading{
+    position: relative;
+    padding: 10px;
+    top: -20px;
+    right: 20px;
+    width: 520px;
+    background: var(--root-color);
+    font-size: 30px;
+    display: grid;
+    font-weight: bold;
+    align-content: stretch;
+    align-items: center;
+}
+.username{
+    color:white;
+    background: black;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    padding: 10px;
+    outline: none;
+    font: 14px;
+    border:none;
+    width: 520px;
+}
+.password{
+    color: white;
+    position: relative;
+    background: black;
+    padding: 10px;
+    left: -20px;
+    top: -22px;
+    border: none;
+    border-top: solid 1px #262626;
+    outline: none;
+    border-bottom: solid 1px #262626;
+    width: 520px;
+}
+.companyEffect{
+    position: absolute;
+    font-size: 10px;
+    color: grey;
+    bottom: 5px;
+    right: 5px;
+}
+.button{
+    background: var(--root-color);
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    width: 50px;
+    left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.logoImg{
+    color: transparent;
+    position: fixed;
+    left: 550px;
+    transform: translate(0px, -10%);
+}
+.about{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-size: 14px;
+}
+.dashboardContainer{
+    width: 1500px;
+    height: 700px;
+    position: fixed;
+    background: #101010;
+    left: 20px;
+    border: 1px solid var(--border-color);
+    top: 10px;
+}
+.dashboardContainerHeading{
+    color: white;
+    position: absolute;
+    background: var(--root-color);
+    width: 1490px;
+    text-align: right;
+    font-size: 14px;
+    padding: 5px;
+    font-style: italic;
+}
+.dashboardTabSwitcher{
+    /* background: white; */
+    width: 1487px;
+    border: 1px solid var(--border-color);
+    height: 40px;
+    position: absolute;
+    top: 27px;
+    color: white;
+    display: flex;
+    align-content: center;
+    font-size: 13px;
+    align-items: center;
+    padding: 5px;
+}
+.dashboardTabButton{
+    border: 1px solid var(--border-color);
+    position: absolute;
+    padding: 15px;
+    cursor: pointer;
+    left: 1px;
+    transition: 0.3s;
+}
+.dashboardTabButton:hover{
+    background: var(--secondary-border-color);
+}
+.logoImgX{
+    color: transparent;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    filter: invert(1);
+    opacity: 0.1;
+}
+.dashboardControlArea{
+    border: 1px solid var(--border-color);
+    width: 1000px;
+    height: 617px;
+    position: absolute;
+    top: 80px;
+    left: 1px;
+}
+.dashboardInfoArea{
+    border: 1px solid var(--border-color);
+    width: 492px;
+    height: 617px;
+    position: absolute;
+    top: 80px;
+    right: 2px;
+}
+.logoutButton{
+    color: transparent;
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+}
+.sessionStatus{
+    position: absolute;
+    left: 30px;
+    transition: 0.5s;
+    font-size: 12px;
+    top: 6px;
+}
+.orderContainer{
+    position: absolute;
+    color: white;
+    border: 1px solid var(--border-color);
+    width: 980px;
+    padding: 10px;
+    height: 120px;
+    transition: 0.1;
+    cursor: pointer;
+}
+.orderContainer:hover{
+    background-color: var(--tertiary-border-color);
+}
+.orderId {
+    position: absolute;
+    color: var(--border-color);
+    right: 10px;
+    font-size: 15px;
+}
+.orderType{
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    bottom: 10PX;
+}
+.userId{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--root-color);
+}
+.totalAmount{
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.orderTime{
+    position: absolute;
+    top: 12px;
+    font-size: 13px;
+    color: var(--border-color);
+    left: 400px;
+}
+.orderDate{
+    position: absolute;
+    top: 12px;
+    font-size: 13px;
+    color: var(--border-color);
+    left: 320px;
+}
+.orderTotalLinks{
+    position: absolute;
+    right: 10px;
+    top:30px;
+    color: var(--border-color);
+    font-size: 15px;
+}
+.orderPaymentId{
+    position: absolute;
+    right: 10px;
+    color: var(--border-color);
+    font-size: 15px;
+    top: 50px;
+}
+.orderStatus{
+    position: absolute;
+    font-size: 60px;
+    top: 30px;
+    font-weight: 700;
+}
+.orderInfoContainer {
+    position: absolute;
+    right: -500px;
+    /* border: 1px solid var(--border-color); */
+    width: 500px;
+    height: 620px;
+    color:white;
+    z-index: 1;
+}
+.infoOrderId {
+    position: absolute;
+    color: var(--border-color);
+    left: 10px;
+    bottom: 40px;
+    font-size: 15px;
+}
+.infoOrderType{
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    bottom: 10PX;
+}
+.infoUserId{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    left:10px;
+    color: var(--root-color);
+}
+.infoTotalAmount{
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.infoOrderTime{
+    position: absolute;
+    top: 2px;
+    font-size: 13px;
+    color: var(--border-color);
+    left: 400px;
+}
+.infoOrderDate{
+    position: absolute;
+    top: 2px;
+    font-size: 13px;
+    color: var(--border-color);
+    left: 320px;
+}
+.infoOrderTotalLinks{
+    position: absolute;
+    left: 10px;
+    bottom: 220px;
+    color: var(--border-color);
+    font-size: 15px;
+}
+.infoOrderPaymentId{
+    position: absolute;
+    left: 10px;
+    color: var(--border-color);
+    font-size: 15px;
+    bottom: 60px;
+}
+.infoOrderStatus{
+    position: absolute;
+    font-size: 60px;
+    bottom: 40px;
+    font-weight: 700;
+    right: 10px;
+}
+.infoPageNumber{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 200px;
+    left: 10px;
+}
+.infoDecorationNumber{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 180px;
+    left: 10px;
+}
+.infoDiagramNumber{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 160px;
+    left: 10px;
+}
+.infoFileUploaded{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 140px;
+    left: 10px;
+}
+.infoOgFileName{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 15px;
+    bottom: 120px;
+    left: 10px;
+}
+.infoServerFileName{
+    color: var(--border-color);
+    position: absolute;
+    font-size: 10px;
+    bottom: 80px;
+    left: 10px;
+    display: none;
+}
+.infoEmbedLinkContainer{
+    position: absolute;
+    top: -50px;
+    right: 250px;
+}
+.writerSelectorButton{
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    width: 30px;
+    height: 24px;
+    /* padding: 7px; */
+    background: var(--root-color);
+    border: var(--border-color);
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    display: grid;
+    font-weight: 600;
+    align-items: center;
+}
+.jsonDownloadButton{
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+}
+/* {
+    position: absolute;
+  top: 0px;
+  right: -50px;
+  width: 50px;
+  height: 24px;
+  padding: 7px;
+  background: var(--root-color);
+  border: var(--border-color);
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  display: grid;
+  font-weight: 800;
+  align-items: center;
+} */
+.writerSelectorInput{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: var(--tertiary-border-color);
+    border: 1px solid var(--secondary-border-color);
+    color:white;
+}
+.writerSelectorInput:focus{
+    outline: none;
+}
+.infoAssignedWriterId{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: var(--info-color-SA);
+    font-size: 15px;
+}
+.infoAddress{
+    color: var(--border-color);
+  top: 50px;
+  position: absolute;
+  font-size: 15px;
+  left: 10px;
+}
