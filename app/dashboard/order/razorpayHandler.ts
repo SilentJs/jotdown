@@ -5,8 +5,8 @@ export default class RazorpayService{
     constructor(){
         // console.log(process.env.RAZORPAY_SECRET_CLIENT_ID)
         this.razorpay= new Razorpay({
-            key_id:'rzp_test_c5QgQ6Mw8rYqRo',
-            key_secret:'KaxujSmYwkdyWNj1YkegXyFI',
+            key_id:'',
+            key_secret:'',
         })
     }
     public async createOrder(options:RazorpayOrderOptions):Promise<string>{
